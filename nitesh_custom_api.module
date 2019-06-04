@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains nitesh_custom_api.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function nitesh_custom_api_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the nitesh_custom_api module.
+    case 'help.page.nitesh_custom_api':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Custom module to add additional field in site information form') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function nitesh_custom_api_theme() {
+  return [
+    'nitesh_custom_api' => [
+      'render element' => 'children',
+    ],
+  ];
+}

@@ -1,0 +1,5 @@
+name: 'Nitesh Custom API'
+type: module
+description: 'Custom module to add additional field in site information form'
+core: 8.x
+package: 'Custom'

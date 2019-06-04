@@ -1,0 +1,14 @@
+{
+  "name": "drupal/nitesh_custom_api",
+  "type": "drupal-module",
+  "description": "Custom module to add additional field in site information form",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/nitesh_custom_api",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/nitesh_custom_api",
+    "source": "http://cgit.drupalcode.org/nitesh_custom_api"
+  },
+  "require": { }
+}
