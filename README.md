@@ -3,7 +3,7 @@
 
 2. To set api key go to site information form and enter the key in site API key field and click on Update Configuration
 
-3. This module also give JSON resonse when the API you have entered is passed as url parameter in /testapikey/{apikey}/{nid} 
+3. This module also give JSON response when the API you have entered is passed as url parameter in /testapikey/{apikey}/{nid} 
 where apikey is the API key you have saved in site information form and nid is the node id
 
 References: 
