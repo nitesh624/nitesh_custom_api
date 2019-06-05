@@ -77,7 +77,7 @@ function nitesh_custom_api_submit_handler(&$form, FormStateInterface $formState)
       ->save();
 
     drupal_set_message(t('<strong>API Key updated to </strong>' . $form['site_information']['siteapikey']['#value']), 'status');
-    drupal_set_message(t('To test your key visit <a href="../../../testapikey/apikey/nid">/testapikey/{apikey}/{nid}</a>'), 'status');
+    drupal_set_message(t('To test your key visit <a href="../../../page_json/apikey/nid">/page_json/{apikey}/{nid}</a>'), 'status');
     drupal_set_message(t('where <strong>apikey</strong> is the key you have set and <strong>nid</strong> is node id, you will get <strong>json data</strong> of that node if api is correct otherwise <strong>access denied</strong>'), 'status');
   }
 }
