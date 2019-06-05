@@ -1,0 +1,13 @@
+
+# nitesh_custom_api.node_access_controller_testapikey:
+nitesh_custom_api.mypage:
+  path: '/testapikey/{apikey}/{nid}'
+  defaults:
+    _controller: '\Drupal\nitesh_custom_api\Controller\NodeAccessController::testapikey'
+    _title: 'testapikey'
+  options:
+    parameters:
+      nid:
+        type: integer
+  requirements:
+    _permission: 'access content'

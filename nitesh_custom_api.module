@@ -16,7 +16,10 @@ function nitesh_custom_api_help($route_name, RouteMatchInterface $route_match) {
     case 'help.page.nitesh_custom_api':
       $output = '';
       $output .= '<h3>' . t('About') . '</h3>';
-      $output .= '<p>' . t('Custom module to add additional field in site information form') . '</p>';
+      $output .= '<p>' . t('Custom module to add additional field <strong>site API key</strong> in site information form ') . '</p>';
+      $output .= '<p>' . t('To set api key go to <a href="../../admin/config/system/site-information">site information form </a> and enter the key in <strong>site API key</strong> field and click on <strong>Update Configuration</strong>') . '</p>';
+      $output .= '<p>' . t('This module also give JSON resonse when the API you have entered is passed as url parameter in <strong>/testapikey/{apikey}/{nid}</strong> where <strong>apikey</strong> is the API key you have saved in site information form and <strong>nid</strong> is the node id') . '</p>';
+      
       return $output;
 
     default:
