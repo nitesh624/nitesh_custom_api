@@ -53,7 +53,7 @@ function nitesh_custom_api_form_alter(&$form, FormStateInterface $form_state, $f
             '#maxlength' => 64,
             '#size' => 64,
             '#default_value' => $siteapikey,
-            '#weight' => '7',
+            '#weight' => '5',
             '#placeholder' => t('Enter API key'),
             ];
 
@@ -66,7 +66,7 @@ function nitesh_custom_api_form_alter(&$form, FormStateInterface $form_state, $f
 
 function nitesh_custom_api_submit_handler(&$form, FormStateInterface $formState) {
   
-  if( false == empty( $form['site_information']['siteapikey']['#value'] ) 
+  if(!empty( $form['site_information']['siteapikey']['#value'] ) 
     && $form['site_information']['siteapikey']['#value'] != \Drupal::config('nitesh_custom_api.settings')->get('siteapikey') ) {
 
     \Drupal::configFactory()->getEditable('nitesh_custom_api.settings')
